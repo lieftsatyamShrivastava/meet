@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/navigation'
 
-// import styles from '@/styles/home.module.css'
+import styles from '@/styles/home.module.css'
 import { useState } from 'react';
 
 export default function Home() {
@@ -20,13 +20,13 @@ export default function Home() {
     }
   }
   return (
-    <div className=" w-4/12 mx-auto p-2 border border-white rounded mt-8 text-blue-800 flex flex-col items-center">
-        <h1 className='text-xl text-center'>Google Meet Clone</h1>
-        <div className='flex flex-col items-center mt-3 w-full'>
+    <div className={styles.homeContainer}>
+        <h1>   Satyam  Meet </h1>
+        <div className={styles.enterRoom}>
           <input placeholder='Enter Room ID' value={roomId} onChange={(e) => setRoomId(e?.target?.value)}/>
-          <button className='bg-buttonPrimary py-2 px-4 rounded'  onClick={joinRoom} >Join Room</button>
+          <button onClick={joinRoom}>Join Room</button>
         </div>
-        <span  className='my-3 text-x' >--------------- OR ---------------</span>
+        <span  className={styles.separatorText} >--------------- OR ---------------</span>
         <button onClick={createAndJoin}>Create a new room</button>
     </div>
   )
