@@ -4,7 +4,7 @@ import { useSocket } from "@/context/socket";
 import usePeer from "@/hooks/usePeer";
 import useMediaStream from "@/hooks/useMediaStream";
 import usePlayer from "@/hooks/usePlayer";
-import Player from "@/component/Player";
+import Player from "@/component/Player/index";
 import Bottom from "@/component/Bottom";
 import CopySection from "@/component/CopySection";
 import styles from "@/styles/room.module.css";
