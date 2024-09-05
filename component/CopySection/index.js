@@ -21,3 +21,5 @@ const CopySection = (props) => {
 };
 
 export default CopySection;
+
+// index 

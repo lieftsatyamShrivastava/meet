@@ -45,3 +45,4 @@ const usePlayer = (myId, roomId, peer) => {
 }
 
 export default usePlayer;
+// useplayer hook dekho 

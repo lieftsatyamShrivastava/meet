@@ -38,3 +38,4 @@ const Player = (props) => {
 };
 
 export default Player;
+// final changes 
